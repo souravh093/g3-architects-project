@@ -1,4 +1,234 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap');
 
-/* font-family: 'Work Sans', sans-serif; */
+/* universel styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+:root {
+    --bg-primary: #FF900E;
+    --bg-secondary: #FFF4E7;
+    --text-primary: #FF900E;
+    --text-secondary: #727272;
+    --text-white: #FFFFFF;
+    --text-title: #131313;
+    --text-light: 300;
+    --text-bold: 700;
+    --text-samibold: 500;
+    --font-primary: 'Work Sans', sans-serif;
+}
+
+/* common styles */
+.main {
+    padding: 0 240px;
+}
+
+section {
+    margin: 100px 0;
+}
+
+.primary-btn {
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    background: var(--bg-primary);
+    color: var(--text-white);
+    font-weight: var(--text-bold);
+}
+
+
+/* header area styles */
+.header {
+    padding: 50px 240px;
+    background: var(--bg-secondary);
+}
+
+/* navigation area styles */
+.navbar-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.logo-area .brand-title {
+    font-size: 45px;
+    font-weight: var(--text-bold);
+}
+
+.navbar {
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 18px;
+}
+
+/* banner area styles */
+.banner-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.banner-content .banner-title {
+    font-size: 64px;
+    font-weight: var(--text-bold);
+    color: var(--text-title);
+    text-align: center;
+}
+
+.banner-content .banner-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+
+/* feature area styels */
+.feature-area {
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-images .feature-img {
+    width: 306px;
+    height: 306px;
+    object-fit: cover;
+}
+
+
+.feature-content .feature-title {
+    font-size: 50px;
+    color: var(--text-secondary);
+    font-weight: var(--text-samibold);
+}
+
+.feature-content .feature-title .text-black {
+    color: var(--text-title);
+}
+
+.feature-content .feature-title .text-primary {
+    color: var(--text-primary);
+}
+
+.feature-content .feature-subtitle {
+    margin: 25px 0;
+}
+
+/* service area styles */
+.services-area {
+    display: flex;
+    gap: 50px;
+}
+
+.services-content .verticle-desing {
+    display: flex;
+    gap: 15px;
+    align-items: center;    
+}
+
+.verticle-desing .verticle-line {
+    border-left: 6px solid var(--text-primary);
+    height: 100px;
+}
+
+.verticle-desing .services-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--text-title);
+}
+
+.services-area .services-subtitle {
+    margin: 24px 0;
+    color: var(--text-secondary);
+}
+
+.services-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-item {
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-item .item-title {
+    font-size: 20px;
+    font-weight: var(--text-samibold);
+    color: var(--text-title);
+}
+
+.services-item .item-subtitle {
+    color: var(--text-secondary);
+}
+
+.services-image-contain {
+    position: relative;
+    padding: 90px
+}
+
+.experience {
+    width: 350px;
+    height: 200px;
+    background: var(--bg-primary);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: -42px;
+}
+
+.experience .experience-title {
+    font-size: 60px;
+    font-weight: var(--text-bold);
+    color: var(--text-white);
+}
+
+.experience .experience-sub-titel {
+    font-size: 25px;
+    color: var(--text-white);
+}
+
+/* facts area styles */
+
