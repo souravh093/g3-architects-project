@@ -283,20 +283,23 @@ section {
     margin-top: 150px;
 }
 
-.sponsore-title-container {
+.sponsore-title-container,
+.newsletter-title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sponspore-title {
+.sponspore-title,
+.newsletter-title {
     font-size: 45px;
     font-weight: var(--text-bold);
     color: var(--text-title);
     margin-bottom: 25px;
 }
 
-.sponspore-subtitle {
+.sponspore-subtitle,
+.newsletter-subtitle{
     max-width: 600px;
     margin-bottom: 100px;
     color: var(--text-secondary);
@@ -317,7 +320,42 @@ section {
     transition: 0.2s ease-in;
 }
 
-/* footer section */
+/* newsletter area sytles */
+.input-container {
+    background: var(--bg-secondary);
+    padding: 120px 0;
+    border-radius: 39px;
+}
+
+.newsletter-subtitle {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.input-group .input-newsletter {
+    padding: 20px 20px;
+    font-size: 20px;
+    border: 1px solid var(--bg-primary);
+    border-bottom-left-radius: 39px;
+    border-top-left-radius: 39px;
+    outline: none;
+}
+
+.input-group .input-btn {
+    padding: 20px;
+    font-size: 18px;
+    background: var(--bg-primary);
+    border: 1px solid var(--bg-primary);
+    color: var(--text-white);
+    border-top-right-radius: 39px;
+    border-bottom-right-radius: 39px;
+}
+
+/* footer area styles */
 .footer {  
     padding: 0 240px;
     margin-bottom: 100px;
@@ -373,7 +411,7 @@ section {
         margin-bottom: 50px;
         padding: 20px;
     }
-    
+
     .banner-content .banner-title {
         font-size: 40px;
     }
@@ -459,6 +497,27 @@ section {
 
     .sponspore-img {
         width: 200px;
+    }
+
+    .input-container {
+        border-radius: 0;
+    }
+    
+    .newsletter-title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .input-group .input-newsletter {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .input-group .input-btn {
+        padding: 10px;
+        font-size: 16px;
     }
 
     .footer {
