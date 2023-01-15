@@ -78,6 +78,11 @@ section {
     font-size: 18px;
 }
 
+.navbar li a:hover {
+    color: var(--text-title);
+    transition: 0.3s ease-in;
+}
+
 /* banner area styles */
 .banner-area {
     display: flex;
@@ -326,4 +331,147 @@ section {
     color: var(--text-secondary);
     background: var(--bg-secondary);
     border-radius: 5px;
+}
+
+/* responsive desing sytles */
+
+@media  screen and (max-width: 576px) {
+    section {
+        margin: 30px 0;
+    }
+
+    .header {
+        padding: 20px 15px;
+        background: var(--bg-secondary);
+    }
+
+    .navbar-area {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .logo-area .brand-title {
+        font-size: 35px;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .banner-area .banner-img {
+        width: 300px;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100vw;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    .banner-content .banner-title {
+        font-size: 40px;
+    }
+
+    .main {
+        padding: 0px;
+    }
+
+    .feature-area {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .feature-images {
+        grid-template-columns: 1fr;
+    }
+
+    .services-area {
+        gap: 20px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .services-image-contain {
+        padding: 0;
+    }
+
+    .verticle-desing .verticle-line {
+        height: 235px;
+    }
+
+    .services-image-contain .services-img {
+        width: 88vw;
+    }
+
+    .experience {
+        position: static;
+        width: 282px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .experience .experience-title {
+        font-size: 35px;
+    }
+
+    .experience .experience-sub-titel {
+        font-size: 18px;
+    }
+
+    .facts-area {
+        padding: 20px;
+    }
+
+    .facts-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .facts-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sponspore-area {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .sponspore-subtitle {
+        margin-bottom: 30px;
+        text-align: start;
+    }
+
+    .sponspore-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .sponspore-img {
+        width: 200px;
+    }
+
+    .footer {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer-title {
+        padding: 20px 5px;
+        display: block;
+    }
+}
+
+.hide {
+    display: none;
 }
